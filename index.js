@@ -3,7 +3,7 @@ const { Client, Intents } = require('discord.js');
 const { token } = require('./token');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_PRESENCES] });
 
-const log = "../MultiMC/instances/1.19 Newwind/.minecraft/logs/latest.log";
+const log = "../MultiMC/instances/1.19 Minewind/.minecraft/logs/latest.log";
 
 
 const channelLabyrinth = "969053026625126410";
