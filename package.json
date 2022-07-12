@@ -1,0 +1,27 @@
+{
+  "name": "minewind-events",
+  "version": "1.0.0",
+  "description": "A discord bot that pings people if a event happens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udu3324/minewind-events.git"
+  },
+  "keywords": [
+    "discord.js"
+  ],
+  "author": "udu3324",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udu3324/minewind-events/issues"
+  },
+  "homepage": "https://github.com/udu3324/minewind-events#readme",
+  "dependencies": {
+    "discord.js": "^13.7.0",
+    "tail": "^2.2.4"
+  }
+}

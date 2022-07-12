@@ -1,0 +1,5 @@
+/node_modules
+/lang
+latest.log
+MinecraftClient.ini
+SessionCache.ini
