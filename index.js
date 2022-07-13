@@ -123,9 +123,9 @@ tail.on("line", function (data) {
         if (/(^Beef Event begins in .* seconds\.$)/.test(data)) {
             setTimeout(function () {
                 sendMessage(channelBeef, `||${pingBeef}||`, false)
-                sendEmbed(channelBeef, "Beef", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544952030986270/beef_start_upscale.png", "001E9A")
+                sendEmbed(channelBeef, "Beef", "Beef has started!", "https://cdn.discordapp.com/attachments/996544779926126692/996544952030986270/beef_start_upscale.png", "001E9A")
 
-                sendMessage(channelRawAlerts, `${data} ||${pingBeef}||`, false)
+                sendMessage(channelRawAlerts, `Beef has started! ||${pingBeef}||`, false)
             }, 10000)
         }
     } else if (/(^Team (aqua|red) wins the beef event!$)/.test(data)) {
@@ -142,9 +142,9 @@ tail.on("line", function (data) {
         if (/^Abyssal event begins in 10 seconds\.$/.test(data)) {
             setTimeout(function () {
                 sendMessage(channelAbyssal, `||${pingAbyss}||`, false)
-                sendEmbed(channelAbyssal, "Abyssal", data, "https://media.discordapp.net/attachments/996544779926126692/996544980514521148/abyss_Start.gif", "0537D6")
+                sendEmbed(channelAbyssal, "Abyssal", "Abyssal has started!", "https://media.discordapp.net/attachments/996544779926126692/996544980514521148/abyss_Start.gif", "0537D6")
 
-                sendMessage(channelRawAlerts, `${data} ||${pingAbyss}||`, false)
+                sendMessage(channelRawAlerts, `Abyssal has started! ||${pingAbyss}||`, false)
             }, 10000)
         }
     } else if (/^\w{3,16} wins the abyssal event! Poseidon is pleased!$/.test(data)) {
@@ -180,7 +180,7 @@ tail.on("line", function (data) {
         sendMessage(channelRawAlerts, `${data}`, false)
     }
 
-    if (/^Fox hunt begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
+    if (/^Fox Hunt Event begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
         sendMessage(channelFoxHunt, `||${pingFox}||`, false)
         sendEmbed(channelFoxHunt, "Fox Hunt", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544905616818196/fox_soon_upscale.png", "F5E78F")
 
@@ -220,9 +220,9 @@ tail.on("line", function (data) {
         if (/^Bait Event begins in 10 seconds\.$/.test(data)) {
             setTimeout(function () {
                 sendMessage(channelBait, `||${pingBait}||`, false)
-                sendEmbed(channelBait, "Bait", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544953104748594/fish_Start.gif", "001E9A")
+                sendEmbed(channelBait, "Bait", "Bait has started!", "https://cdn.discordapp.com/attachments/996544779926126692/996544953104748594/fish_Start.gif", "001E9A")
 
-                sendMessage(channelRawAlerts, `${data} ||${pingBait}||`, false)
+                sendMessage(channelRawAlerts, `Bait has started! ||${pingBait}||`, false)
             }, 10000)
         }
     } else if (/^Fishing event ends!$/.test(data)) {
