@@ -249,7 +249,7 @@ tail.on("line", function (data) {
         sendEmbed(channelCastle, "Castle", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544952660131962/castle_start_upscale.png", "555555")
 
         sendMessage(channelRawAlerts, `${data}\n||${pingCastle}||`)
-    } else if (/( \(.*\) take the Minewind City from .* \(.*\)!$| \(.*\) hold the Minewind City!$)/) {
+    } else if (/( \(.*\) take the Minewind City from .* \(.*\)!$| \(.*\) hold the Minewind City!$)/.test(data)) {
         sendEmbed(channelCastle, "Castle", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544952261685380/castle_end_upscale.png", "555555")
 
         sendMessage(channelRawAlerts, `${data}`)
