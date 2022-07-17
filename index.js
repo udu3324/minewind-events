@@ -239,7 +239,8 @@ tail.on("line", function (data) {
         }
     }
     
-    data = data.substring(0, data.indexOf("\n"));
+    if (data.includes("\n"))
+        data = data.substring(0, data.indexOf("\n"))
 
     if (/^Battle for Minewind begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
         sendMessage(channelCastle, `||${pingCastle}||`, false)
