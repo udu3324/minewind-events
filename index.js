@@ -169,7 +169,7 @@ tail.on("line", function (data) {
         sendMessage(channelRawAlerts, `${data}`, false)
     }
 
-    if (data === "Snowmen invade the spawn!") {
+    if (data === "Snowmen invade /pvp!") {
         sendMessage(channelSnowvasion, `||${pingSnow}||`, false)
         sendEmbed(channelSnowvasion, "Snowvasion", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544907676233768/snowvasion_Start.gif", "ffffff")
 
@@ -238,6 +238,8 @@ tail.on("line", function (data) {
             listenForBaitEnd = false
         }
     }
+    
+    data = data.substring(0, data.indexOf("\n"));
 
     if (/^Battle for Minewind begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
         sendMessage(channelCastle, `||${pingCastle}||`, false)
