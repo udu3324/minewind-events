@@ -153,7 +153,7 @@ tail.on("line", function (data) {
         sendMessage(channelRawAlerts, `${data}`, false)
     }
 
-    if (/^Attack on Giant begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
+    if (/^Attack on Giant Event begins in (30|20|10|5|1) (hour|minute(s|)|seconds)\.$/.test(data)) {
         sendMessage(channelAttackOnGiant, `||${pingAttack}||`, false)
         sendEmbed(channelAttackOnGiant, "Attack on Giant", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544906149498970/giant_soon_upscale.png", "50862a")
 
