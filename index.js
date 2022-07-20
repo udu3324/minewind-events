@@ -158,12 +158,12 @@ tail.on("line", function (data) {
         sendEmbed(channelAttackOnGiant, "Attack on Giant", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544906149498970/giant_soon_upscale.png", "50862a")
 
         sendMessage(channelRawAlerts, `${data} ||${pingAttack}||`, false)
-    } else if (data === "Attack on Giant has begun!") {
+    } else if (data === "Attack on Giant Event has begun!") {
         sendMessage(channelAttackOnGiant, `||${pingAttack}||`, false)
         sendEmbed(channelAttackOnGiant, "Attack on Giant", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544953306058812/attack_Start.gif", "50862a")
 
         sendMessage(channelRawAlerts, `${data} ||${pingAttack}||`, false)
-    } else if (data === "Attack on Giant ends!") {
+    } else if (data === "Attack on Giant Event ends!") {
         sendEmbed(channelAttackOnGiant, "Attack on Giant", data, "https://cdn.discordapp.com/attachments/996544779926126692/996544980959109240/attack_End.gif", "50862a")
 
         sendMessage(channelRawAlerts, `${data}`, false)
